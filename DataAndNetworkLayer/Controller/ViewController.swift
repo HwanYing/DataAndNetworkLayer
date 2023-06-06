@@ -79,7 +79,7 @@ class ViewController: UIViewController {
 //        ]
 //        let bodyData = try! JSONSerialization.data(withJSONObject: requestBody, options: .init())
 //        urlRequest.httpBody = bodyData
-        let requestObject = LoginRequest(username: tmdbUserName, password: tmdbPassword, request_token: requestToken)
+        let requestObject = LoginRequest(username: tmdbUserName, password: tmdbPassword, request_token: requestToken1)
         urlRequest.httpBody = try! JSONEncoder().encode(requestObject)
         
         let session = URLSession.shared

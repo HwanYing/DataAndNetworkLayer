@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1618EB8B0410CFD5CF16D0B9 /* Pods_DataAndNetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6D02085650E0F2BAB071FE /* Pods_DataAndNetworkLayer.framework */; };
+		504A5AC02A2EF9BD00B90F7C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A5ABF2A2EF9BD00B90F7C /* SecondViewController.swift */; };
+		504A5AC22A2F0B6300B90F7C /* SearchMovieResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504A5AC12A2F0B6300B90F7C /* SearchMovieResult.swift */; };
 		506703022A2DD6FD007E6983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506703012A2DD6FD007E6983 /* AppDelegate.swift */; };
 		506703042A2DD6FD007E6983 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506703032A2DD6FD007E6983 /* SceneDelegate.swift */; };
 		506703062A2DD6FD007E6983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506703052A2DD6FD007E6983 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		504A5ABF2A2EF9BD00B90F7C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		504A5AC12A2F0B6300B90F7C /* SearchMovieResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMovieResult.swift; sourceTree = "<group>"; };
 		506702FE2A2DD6FD007E6983 /* DataAndNetworkLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataAndNetworkLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506703012A2DD6FD007E6983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		506703032A2DD6FD007E6983 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				506703152A2DE2AD007E6983 /* Models.swift */,
 				5067031A2A2E0A66007E6983 /* UpcomingMovieList.swift */,
+				504A5AC12A2F0B6300B90F7C /* SearchMovieResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				506703052A2DD6FD007E6983 /* ViewController.swift */,
+				504A5ABF2A2EF9BD00B90F7C /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,8 +257,10 @@
 				506703062A2DD6FD007E6983 /* ViewController.swift in Sources */,
 				5067031B2A2E0A66007E6983 /* UpcomingMovieList.swift in Sources */,
 				506703022A2DD6FD007E6983 /* AppDelegate.swift in Sources */,
+				504A5AC02A2EF9BD00B90F7C /* SecondViewController.swift in Sources */,
 				506703042A2DD6FD007E6983 /* SceneDelegate.swift in Sources */,
 				506703162A2DE2AD007E6983 /* Models.swift in Sources */,
+				504A5AC22A2F0B6300B90F7C /* SearchMovieResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

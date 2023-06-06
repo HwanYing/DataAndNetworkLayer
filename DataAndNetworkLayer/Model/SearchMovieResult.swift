@@ -1,36 +1,30 @@
 //
-//  UpcomingMovieList.swift
+//  SearchMovieResult.swift
 //  DataAndNetworkLayer
 //
-//  Created by 梁世仪 on 2023/6/5.
+//  Created by 梁世仪 on 2023/6/6.
 //
 
 import Foundation
 
-// MARK: - UpcomingMovieList
-struct UpcomingMovieList: Codable {
-    let dates: Dates?
+// MARK: - SearchMovieResult
+struct SearchMovieResult: Codable {
     let page: Int?
-    let results: [UpcomingResult]?
+    let results: [Result]?
     let totalPages, totalResults: Int?
     
     enum CodingKeys: String, CodingKey {
-        case dates, page, results
+        case page, results
         case totalPages = "total_pages"
         case totalResults = "total_results"
     }
 }
 
-// MARK: - Dates
-struct Dates: Codable {
-    let maximum, minimum: String?
-}
-
 // MARK: - Result
-struct UpcomingResult: Codable {
+struct Result: Codable {
+    let genreIDS: [Int]?
     let adult: Bool?
     let backdropPath: String?
-    let genreIDS: [Int]?
     let id: Int?
     let originalLanguage: OriginalLanguage?
     let originalTitle, overview: String?
@@ -41,9 +35,9 @@ struct UpcomingResult: Codable {
     let voteCount: Int?
     
     enum CodingKeys: String, CodingKey {
+        case genreIDS = "genre_ids"
         case adult
         case backdropPath = "backdrop_path"
-        case genreIDS = "genre_ids"
         case id
         case originalLanguage = "original_language"
         case originalTitle = "original_title"
@@ -56,4 +50,11 @@ struct UpcomingResult: Codable {
     }
 }
 
+enum OriginalLanguage: String, Codable {
+    case en = "en"
+    case es = "es"
+    case ja = "ja"
+    case te = "te"
+    case zh = "zh"
+}
 
